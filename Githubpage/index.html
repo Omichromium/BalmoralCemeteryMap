@@ -20,7 +20,7 @@
         var w = 5346;
         var h = 9375;
 
-        // Initialize map with simple CRS
+        // Initialize Leaflet map
         var map = L.map('map', {
             crs: L.CRS.Simple,
             minZoom: -2,
@@ -28,11 +28,11 @@
             zoomSnap: 0.25
         });
 
-        // Bounds of the image
+        // Image bounds
         var bounds = [[0, 0], [h, w]];
 
-        // Add Google Drive image overlay
-        var image = L.imageOverlay('https://drive.google.com/uc?export=download&id=1Ii1H0TE5jCRPewaBx-vE7AqlupuwA4M1', bounds).addTo(map);
+        // Replace with your Imgur direct link (must end in .png)
+        var image = L.imageOverlay('https://imgur.com/a/T57Bqze.png', bounds).addTo(map);
 
         // Fit map to image bounds
         map.fitBounds(bounds);
